@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Gugălcrom</title>
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Acasă</a></li>
+          <li><a href="/minecraft">Minecraft</a></li>
+          <li><a href="/projects">Proiecte</a></li>
+          <li><a href="/tutorials">Tutoriale</a></li>
+        </ul>
+      </nav>
+      <div id="menuToggle">
+        <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+        <input type="checkbox" />
+        <span class="material-icons" style="font-size: 36px">menu</span>
+        <!--
+            Too bad the menu has to be inside of the button
+            but hey, it's pure CSS magic.
+            -->
+        <ul id="menu">
+          <li><a href="/">Acasă</a></li>
+          <li><a href="/minecraft">Minecraft</a></li>
+          <li><a href="/projects">Proiecte</a></li>
+          <li><a href="/tutorials">Tutoriale</a></li>
+        </ul>
+      </div>
+      <h1>gugalcrom<span style="color: #ffab00">.net</span></h1>
+    </header>
+    <main>
+      <h1>Culori CSS</h1>
+      <p>
+        Pentru a adăuga culori și alte stiluri la o pagină HTML, se folosește
+        CSS. În acest articol voi explica toate modalitățile de adăugare a
+        culorii în CSS.
+      </p>
+      <h2>Coduri de culoare</h2>
+      <p>
+        Unul dintre cele mai simple moduri de a găsi o culoare este folosirea
+        unui <code>&lt;input type=&quot;color&quot;&gt;</code>
+      </p>
+      <p>Rezultatul este:</p>
+      <input type="color" />
+      <i>dă clic pentru a alege o culoare</i>
+      <h2>În practică</h2>
+      <p>În CSS, culorile se adaugă ca parametru la o regulă:</p>
+      <pre>
+        .red {
+            color: red;
+        }
+        body {
+            background-color: #87cefa;
+        }
+        img {
+            border: 3px solid rgb(255, 255, 255)
+        }
+        </pre
+      >
+      <h2>Culori predefinite</h2>
+      <p>
+        Există o listă de culori standard web, care poate fi folosită tastând
+        numele culorii.
+      </p>
+      <pre>
+        black
+        navy
+        darkblue
+        mediumblue
+        blue
+        darkgreen
+        green
+        teal
+        darkcyan
+        deepskyblue
+        darkturquoise
+        mediumspringgreen
+        lime
+        springgreen
+        aqua / cyan
+        midnightblue
+        dodgerblue
+        lightseagreen
+        forestgreen
+        seagreen
+        darkslategray / darkslategrey
+        limegreen
+        mediumseagreen
+        turquoise
+        royalblue
+        steelblue
+        darkslateblue
+        mediumturquoise
+        indigo
+        darkolivegreen
+        cadetblue
+        cornflowerblue
+        rebeccapurple
+        mediumaquamarine
+        dimgray / dimgrey
+        slateblue
+        olivedrab
+        slategray / slategrey
+        lightslategray / lightslategrey
+        mediumslateblue
+        lawngreen
+        chartreuse
+        aquamarine
+        maroon
+        purple
+        olive
+        gray / grey
+        skyblue
+        lightskyblue
+        blueviolet
+        darkred
+        darkmagenta
+        saddlebrown
+        darkseagreen
+        lightgreen
+        mediumpurple
+        darkviolet
+        palegreen
+        darkorchid
+        yellowgreen
+        sienna
+        brown
+        darkgray / darkgrey
+        lightblue
+        greenyellow
+        paleturquoise
+        lightsteelblue
+        powderblue
+        firebrick
+        darkgoldenrod
+        mediumorchid
+        rosybrown
+        darkkhaki
+        silver
+        mediumvioletred
+        indianred
+        peru
+        chocolate
+        tan
+        lightgray / lightgrey
+        thistle
+        orchid
+        goldenrod
+        palevioletred
+        crimson
+        gainsboro
+        plum
+        burlywood
+        lightcyan
+        lavender
+        darksalmon
+        violet
+        palegoldenrod
+        lightcoral
+        khaki
+        aliceblue
+        honeydew
+        azure
+        sandybrown
+        wheat
+        beige
+        whitesmoke
+        mintcream
+        ghostwhite
+        salmon
+        antiquewhite
+        linen
+        lightgoldenrodyellow
+        oldlace
+        red
+        fuchsia / magenta
+        deeppink
+        orangered
+        tomato
+        hotpink
+        coral
+        darkorange
+        lightsalmon
+        orange
+        lightpink
+        pink
+        gold
+        peachpuff
+        navajowhite
+        moccasin
+        bisque
+        mistyrose
+        blanchedalmond
+        papayawhip
+        lavenderblush
+        seashell
+        cornsilk
+        lemonchiffon
+        floralwhite
+        snow
+        yellow
+        lightyellow
+        ivory
+        white
+        </pre
+      >
+      <h2>Hexadecimal</h2>
+      <p>
+        Pentru control mai precis, culorile pot fi definite și exact. Cea mai
+        populară metodă este codul hexadecimal.
+      </p>
+      <pre>
+        hex-example{
+            background-color: #00aa45;
+        }
+        </pre
+      >
+      <p>va rezulta în:</p>
+      <p style="background-color: #00aa45">Test</p>
+      <h2>RGB și HSL</h2>
+      <p>
+        Chiar dacă funcționează diferit, RGB și HSL se folosesc la fel în CSS:
+      </p>
+      <pre>
+        rgb-example{
+            background-color: rgb(150, 0, 255);
+        }
+        </pre
+      >
+      <p>va rezulta în:</p>
+      <p style="background-color: rgb(200, 0, 255)">Test</p>
+      <p>iar</p>
+      <pre>
+        hsl-example{
+            background-color: hsl(300, 100%, 50%);
+        }
+        </pre
+      >
+      <p>va rezulta în:</p>
+      <p style="background-color: hsl(200, 100%, 50%)">Test</p>
+      <p>RGB și HSL pot avea opacitate, folosind rgba și hsla. Exemplu:</p>
+      <pre>
+        rgba-example{
+            background-color: rgba(0, 0, 0, 80%);
+            color: white;
+        }
+        </pre
+      >
+      <p>va rezulta în: (fundal multicolor pentru a demonstra)</p>
+      <div
+        style="
+          background-image: linear-gradient(
+            to right,
+            red,
+            orange,
+            yellow,
+            lime,
+            deepskyblue,
+            blue,
+            purple
+          );
+          padding: 12px;
+        "
+      >
+        <div style="background-color: rgba(0, 0, 0, 80%); color: white">
+          Test
+        </div>
+      </div>
+      <h2>+ Funcții experimentale</h2>
+      <p>
+        În CSS există mai multe funcții experimentale de culoare, ca
+        <code>lab()</code>, <code>lch()</code> și <code>color()</code>
+        Aceste funcții pot afișa culori din afara sRGB, prin spațiul de culoare
+        Display-P3, pe care majoritatea monitoarelor din ziua de azi le pot
+        afișa. Totuși, aceste funcții sunt experimentale și nu sunt suportate
+        peste tot.
+      </p>
+    </main>
+    <footer>
+      <h2>Gugălcrom</h2>
+      <ul>
+        <li><a href="https://Secret-chest.github.io">GitHub</a></li>
+        <li><a href="https://scratch.mit.edu/users/mumu245">Scratch</a></li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCtmGKrFtyfTlhpX9X8ktb8Q"
+            >YouTube</a
+          >
+        </li>
+        <li class="gray">switchtolinux.today</li>
+      </ul>
+    </footer>
+  </body>
+</html>
