@@ -35,6 +35,7 @@ pre, blockquote {
 }
 pre {
     word-wrap: break-word;
+    width: 100%;
 }
 img {
     width: 100%;
