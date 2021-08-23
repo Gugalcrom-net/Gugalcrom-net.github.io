@@ -256,7 +256,7 @@ a:hover {
     }
 }
 @media screen and (max-width: 584px) {
-    .card-full, blockquote, pre {
+    .card-full, blockquote, pre, img {
         width: calc(100% - 16px);
         margin: 0;
     }
