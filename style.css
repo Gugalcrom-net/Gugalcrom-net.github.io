@@ -15,6 +15,10 @@ body {
     margin: 0;
     padding: 0;
 }
+div {
+    box-sizing: border-box;
+    width: 100%;
+}
 body *::selection {
     background: #00bcd4;
     color: #ffffff;
@@ -33,9 +37,12 @@ pre, blockquote {
     width: 100%;
     box-sizing: border-box;
 }
+pre, pre * {
+    word-wrap: break-word !important;
+}
 pre {
-    word-wrap: break-word;
     width: 100%;
+    padding-left: 8px;
 }
 img {
     width: 100%;
@@ -260,7 +267,7 @@ a:hover {
     }
 }
 @media screen and (max-width: 584px) {
-    .card-full, blockquote, pre, img {
+    .card-full, blockquote, pre, img, div {
         width: calc(100% - 16px);
         margin: 0;
     }
