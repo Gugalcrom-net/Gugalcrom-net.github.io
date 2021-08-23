@@ -68,7 +68,7 @@ header {
     color: #ffffff;
     background: #37474f;
     padding: 0;
-    width: 100vw;
+    box-sizing: border-box;
     margin: 0;
     margin-top: 48px;
 }
@@ -76,6 +76,7 @@ footer {
     background: #37474f;
     width: 100%;
     padding: 16px;
+    box-sizing: border-box;
     color: #ffffff;
 }
 nav ul {
@@ -235,12 +236,12 @@ a:hover {
 .material-icons {
     font-family: "Material Icons";
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 584px) {
     #menuToggle {
         display: none;
     }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 584px) {
     nav ul li {
         display: none;
     }
@@ -250,21 +251,19 @@ a:hover {
     footer {
         text-align: center;
     }
+    header h1 {
+        font-size: 48px;
+    }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 584px) {
+    .card-full, blockquote, pre {
+        width: calc(100% - 16px);
+        margin: 0;
+    }
     main {
-        width: 100vw;
         padding: 8px;
     }
-    .card-full, pre, blockquote {
-        max-width: 100vw;
-    }
-    header h1 {
-        font-size: 48px; 
-    }
-    * {
-        max-width: 100vw;
-    }
+}
 html, body {
     height: 100%;
 }
