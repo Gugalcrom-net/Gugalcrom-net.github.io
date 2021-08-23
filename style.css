@@ -33,6 +33,9 @@ pre, blockquote {
     width: 100%;
     box-sizing: border-box;
 }
+pre {
+    word-wrap: break-word;
+}
 img {
     width: 100%;
 }
