@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Gugălcrom - Recuperare lume coruptă</title>
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Acasă</a></li>
+          <li><a href="/minecraft">Minecraft</a></li>
+          <li><a href="/projects">Proiecte</a></li>
+          <li><a href="/tutorials">Tutoriale</a></li>
+        </ul>
+      </nav>
+      <div id="menuToggle">
+        <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+        <input type="checkbox" />
+        <span class="material-icons" style="font-size: 36px">menu</span>
+        <!--
+            Too bad the menu has to be inside of the button
+            but hey, it's pure CSS magic.
+            -->
+        <ul id="menu">
+          <li><a href="/">Acasă</a></li>
+          <li><a href="/minecraft">Minecraft</a></li>
+          <li><a href="/projects">Proiecte</a></li>
+          <li><a href="/tutorials">Tutoriale</a></li>
+        </ul>
+      </div>
+      <h1>gugalcrom<span style="color: #ffab00">.net</span></h1>
+    </header>
+    <main>
+      <h1>Recuperarea unei lumi corupte în Minecraft</h1>
+      <p>
+        Dacă ați lucrat foarte mult la o lume de Minecraft, iar apoi devine coruptă,
+        nu trebuie să vă panicați. Puteți readuce lumea la starea ei de dinainte de a fi coruptă.
+        Citiți acest articol pentru a afla cum.
+      </p>
+      <h2>Pasul 1</h2>
+      <h3>Dacă lumea a fost locală</h3>
+      <p>Copiați folderul cu lumea, pe care îl puteți găsi la <code>/home/(user)/.minecraft/saves/(numele lumii)</code> pe Linux sau <code>C:\Users\(user)\AppData\Roaming\.minecraft\saves\(numele lumii)</code> pe Windows. Redenumiți-l. În acest tutorial îl vom numi <code>LumePierdută</code>.</p>
+      <h3>Dacă lumea a fost pe un server</h3>
+      <p>Ștergeți lumea de pe server și faceți două copii pe PC-ul dv. în folderul de mai sus. Redenumiți una dintre ele, în acest articol o vom numi <code>LumePierdută</code>.</p>
+      <i>dă clic pentru a alege o culoare</i>
+      <h2>Pasul 2</h2>
+      <h3>Dacă există un backup mai vechi care nu este corupt</h3>
+      <p>Copiați backupul. Îl vom numi <code>LumeOK</code>.</p>
+      <h3>Dacă nu există niciun backup</h3>
+      <p>Mergeți în Minecraft, selectați lumea și atingeți Recreează. Schimbați modul de joc la cel original și numiți noua lume <code>LumeOK</code>. O veți găsi în același folder.</p>
+      <h2>Pasul 3</h2>
+      <ol>
+      <li>Mergeți în folderul <code>LumePierdută</code>.</li>
+      <li>Copiați <code>region</code>, <code>entites</code>, <code>DIM1</code> și <code>DIM-1</code>.</li>
+      <li>Mergeți în folderul <code>LumeOK</code>.</li>
+      <li>Lipiți.</li>
+      </ol>
+      <h2>Pasul 4</h2>
+      <h3>Dacă lumea a fost locală</h3>
+      <p>Deschideți <code>LumeOK</code> în Minecraft și bucurați-vă de ea! Veți avea inventarul gol.</p>
+      <h3>Dacă lumea a fost pe un server</h3>
+      <p>Copiați <code>LumeOK</code> pe server. Dacă ați folsit Multiverse anterior, va trebui să o re-adăugați folosind comanda <code>/mvimport LumeOK</code>.</p>
+    </main>
+    <footer>
+      <h2>Gugălcrom</h2>
+      <ul>
+        <li><a href="https://Secret-chest.github.io">GitHub</a></li>
+        <li><a href="https://scratch.mit.edu/users/mumu245">Scratch</a></li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCtmGKrFtyfTlhpX9X8ktb8Q"
+            >YouTube</a
+          >
+        </li>
+        <li class="gray">switchtolinux.today</li>
+      </ul>
+    </footer>
+  </body>
+</html>
