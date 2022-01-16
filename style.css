@@ -20,7 +20,7 @@ div {
     width: 100%;
 }
 body *::selection {
-    background: #00bcd4;
+    background: #8BC34A;
     color: #ffffff;
 }
 main {
@@ -115,11 +115,11 @@ nav ul li a {
     text-decoration: none;
 }
 nav ul li:hover, nav ul li a:hover {
-    background: #00bcd4;
+    background: #8BC34A;
     color: #ffffff !important;
 }
 a {
-    color: #00bcd4;
+    color: #8BC34A;
     text-decoration: none;
     font-weight: bold;
 }
