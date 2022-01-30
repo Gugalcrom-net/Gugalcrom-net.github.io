@@ -1,5 +1,5 @@
 (() => {
-    const rippleHosts = document.querySelectorAll('.button');
+    const rippleHosts = document.querySelectorAll('.button, .button-reverse');
 
     function generateRipple(rippleX, rippleY, rippleDimensions) {
         const div = document.createElement('div');

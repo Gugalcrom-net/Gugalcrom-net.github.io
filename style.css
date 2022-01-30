@@ -65,7 +65,7 @@ h1 {
     font-weight: 900;
     font-size: 48px;
 }
-main {
+.content {
     max-width: 576px;
     width: 100%;
     margin-left: auto;
@@ -271,7 +271,7 @@ a:hover {
         width: calc(100% - 16px);
         margin: 0;
     }
-    main {
+    .content {
         padding: 8px;
     }
 }
@@ -282,8 +282,11 @@ body {
     display: flex;
     flex-direction: column;
 }
-main {
+.content {
     flex: 1 0 auto;
+}
+.card-full > h2 {
+    margin-top: 0;
 }
 footer {
     flex-shrink: 0;
@@ -306,4 +309,67 @@ footer ul li {
     position: absolute;
     right: 32px;
     bottom: 160px;
+}
+.button {
+    background-color: #8BC34A;
+    color: #ffffff;
+    padding: 8px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px #000000;
+    border-radius: 2px;
+    margin: 8px;
+    position: relative;
+    overflow: hidden;
+}
+.button:hover {
+    box-shadow: 0 4px 8px #000000;
+    color: #ffffff;
+}
+.button .ripple-pad {
+    background: #ffffffff;
+    position: absolute;
+    opacity: 1;
+    transform: scale(0);
+    animation: RippleEffect 200ms cubic-bezier(0.2, 0, 0, 0.5) forwards;
+}
+  
+@keyframes RippleEffect {
+    to {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+.button .material-icons {
+    position: relative;
+    top: 4px;
+    font-size: 20px;
+}
+
+.button-reverse {
+    color: #8bc34a;
+    padding: 8px;
+    text-transform: uppercase;
+    border-radius: 10000px;
+    margin: 8px;
+    position: relative;
+    overflow: hidden;
+}
+.button-reverse:hover {
+    color: #689f38;
+}
+.button-reverse .ripple-pad {
+    background: #757575ff;
+    position: absolute;
+    opacity: 1;
+    transform: scale(0);
+    animation: RippleEffect 200ms cubic-bezier(0.2, 0, 0, 0.5) forwards;
+}
+.button-reverse .material-icons {
+    position: relative;
+    top: 4px;
+    font-size: 20px;
 }

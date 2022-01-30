@@ -1,64 +1,32 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/style.css">
-<title>Gugălcrom</title>
-<style>
+---
+title: "Acasă"
+header-content: "Gugălcrom"
+---
+    
+<br>
+<script src="https://apis.google.com/js/platform.js"></script>
 
-</style>
-</head>
-<body>
-    <header>
-    <nav>
-        <ul>
-            <li><a href="/">Acasă</a></li>
-            <li><a href="/minecraft">Minecraft</a></li>
-            <li><a href="/projects">Proiecte</a></li>
-            <li><a href="/tutorials">Tutoriale</a></li>
-        </ul>
-    </nav>
-    <div id="menuToggle">
-            <!--
-            A fake / hidden checkbox is used as click reciever,
-            so you can use the :checked selector on it.
-            -->
-            <input type="checkbox" />
-            <span class="material-icons" style="font-size: 36px">menu</span>
-            <!--
-            Too bad the menu has to be inside of the button
-            but hey, it's pure CSS magic.
-            -->
-            <ul id="menu">
-                <li><a href="/">Acasă</a></li>
-                <li><a href="/minecraft">Minecraft</a></li>
-                <li><a href="/projects">Proiecte</a></li>
-                <li><a href="/tutorials">Tutoriale</a></li>
-            </ul>
-        </div>
-    <h1>gugalcrom<span style="color: #ffab00">.net</span></h1>
-    </header>
-    <main>
-    <br>
-    <script src="https://apis.google.com/js/platform.js"></script>
-
+<div class="card-full">
+    <h2>Canal de YouTube</h2>
     <div class="g-ytsubscribe" data-channelid="UCtmGKrFtyfTlhpX9X8ktb8Q" data-layout="full" data-count="default"></div>
-    <h1>Index site</h1>
-    <div class="card-full">
-        <h2>Tutoriale</h2>
-        <a href="/tutorials">Vezi tot</a>
+</div>
+<div class="card-full">
+    <h2>Blog</h2>
+    <div class="buttons">
+        <a class="button" href="/blog"><span class="material-icons">book</span> Citește-l</a>
     </div>
-    </main>
-    <footer>
-        <h2>Gugălcrom</h2>
-        <ul>
-            <li><a href="https://Secret-chest.github.io">GitHub</a></li>
-            <li><a href="https://scratch.mit.edu/users/mumu245">Scratch</a></li>
-            <li><a href="https://www.youtube.com/channel/UCtmGKrFtyfTlhpX9X8ktb8Q">YouTube</a></li>
-            <li class="gray">switchtolinux.today</li>
-        </ul>
-    </footer>
-<script src="/ripples.js"></script>
-</body>
-</html>
+</div>
+<div class="card-full">
+    <h2>Server de Minecraft</h2>
+    <div class="buttons">
+        <a class="button" href="/minecraft"><span class="material-icons">cached</span> Vezi starea</a>
+    </div>
+</div>
+<div class="card-full">
+    <h2>Proiecte</h2>
+    <div class="buttons">
+        <a class="button" href="https://Secret-chest.github.io/my"><span class="material-icons">computer</span> Proiecte</a>
+        <a class="button" href="https://github.com/Secret-chest"><span class="material-icons">code</span> GitHub</a>
+        <a class="button-reverse" href="https://scratch.mit.edu/users/mumu245"><span class="material-icons">pets</span> Scratch</a>
+    </div>
+</div>
